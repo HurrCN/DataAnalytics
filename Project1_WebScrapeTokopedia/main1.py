@@ -68,10 +68,7 @@ time.sleep(3)
 df = pd.DataFrame(data, columns=['Store', 'Location', 'Product', 'Price'])
 print(df)
 
-with pd.ExcelWriter(r'C:\Users\Muhammad Hurricane\Documents\Programming\DataAnalyst\Project1_TokopediaDataScience2023\result\tokpedscrap.xlsx') as writer:
-    df.to_excel(writer, sheet_name = 'Data Utama', index=False)
-
-df.to_csv(r'C:\Users\Muhammad Hurricane\Documents\Programming\DataAnalyst\Project1_TokopediaDataScience2023\result\tokpedscrap.csv')
+df.to_csv(r'C:\Users\Muhammad Hurricane\Documents\Programming\DataAnalyst\Project1_TokopediaDataScience2023\result\tokpedscrape.csv')
 
 print('Data has been saved.')
 
